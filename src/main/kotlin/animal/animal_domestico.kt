@@ -1,5 +1,10 @@
 import animal.Metodos
-/**No se instance (usar abstractas), se isntance(usar clases de interfaces)*/
+
+/**
+ * Animal_domestico
+ *
+ * @constructor Create empty Animal_domestico
+ */
 abstract class animal_domestico : Metodos { /**poner , para separar herencias*/
     private var nombre:String
     private var peso:Int
@@ -17,17 +22,42 @@ abstract class animal_domestico : Metodos { /**poner , para separar herencias*/
         this.raza = raza
     }
 
-    //vacunar, comer, dormir,
+    /**
+     * Vacunar
+     *
+     * @return
+     *///vacunar, comer, dormir,
     public fun vacunar():Boolean{
         println("Vamos al vete y nos vacunamos")
         return true
     }
+
+    /**
+     * Comer
+     *
+     * @return
+     */
     abstract fun comer():Boolean
 
+    /**
+     * Dormir
+     *
+     * @return
+     */
     abstract fun dormir():Boolean
 
+    /**
+     * Hacer ruido
+     *
+     * @return
+     */
     abstract fun hacerRuido():String
 
+    /**
+     * Hacer caso
+     *
+     * @return
+     */
     public open fun hacerCaso():Boolean{
         return true
     }

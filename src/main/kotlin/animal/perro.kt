@@ -1,4 +1,10 @@
 import kotlin.random.Random
+
+/**
+ * Perro
+ *
+ * @constructor Create empty Perro
+ */
 class perro : animal_domestico {
     private var pulgas:Boolean
 
@@ -6,6 +12,11 @@ class perro : animal_domestico {
         this.pulgas = pul
     }
 
+    /**
+     * Sacar paseo
+     *
+     * @return
+     */
     public fun sacarPaseo():Boolean{
         println("Nos vamos de paseo")
         return true

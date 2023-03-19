@@ -1,11 +1,22 @@
 import kotlin.random.Random
 
+/**
+ * Gato
+ *
+ * @constructor Create empty Gato
+ */
 class gato : animal_domestico {
     private var pelo:Int
 
     constructor(pel:Int,nom: String, pe: Int, raza: String, color: String) : super(nom, pe, raza, color){
         this.pelo = pel
     }
+
+    /**
+     * Tose bola pelo
+     *
+     * @return
+     */
     public fun toseBolaPelo():Boolean{
         return true
     }

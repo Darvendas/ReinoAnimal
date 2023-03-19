@@ -1,7 +1,23 @@
-package animal /**Solo se puede heredar de un padre, (en python y c++ si se puede)
- En ese caso para herdar mas cosas lo mejor es hacer una interface.*/
+package animal
+
+/**
+ * Metodos
+ *
+ * @constructor Create empty Metodos
+ */
 
 interface Metodos {
+    /**
+     * Moralidad
+     *
+     * @return
+     */
     abstract fun moralidad():String
+
+    /**
+     * Inteligencia
+     *
+     * @return
+     */
     abstract fun inteligencia():Int
 }

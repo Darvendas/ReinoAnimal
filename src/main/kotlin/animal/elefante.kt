@@ -1,5 +1,10 @@
 import kotlin.random.Random
 
+/**
+ * Elefante
+ *
+ * @constructor Create empty Elefante
+ */
 class elefante : animal_domestico {
     private var peligroso:Boolean
     constructor(peli:Boolean,nom: String, pe: Int, raza: String, color: String) : super(nom, pe, raza, color){
@@ -17,6 +22,12 @@ class elefante : animal_domestico {
     override fun hacerRuido(): String {
         return "uuuuuaaaa"
     }
+
+    /**
+     * Peligroso
+     *
+     * @return
+     */
     public fun peligroso():Boolean{
         return true
     }

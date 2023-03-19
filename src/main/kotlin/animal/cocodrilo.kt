@@ -1,5 +1,8 @@
-
-
+/**
+ * Cocodrilo
+ *
+ * @constructor Create empty Cocodrilo
+ */
 class cocodrilo : animal_domestico {
     private var peligroso:Boolean
     constructor(peli:Boolean,nom: String, pe: Int, raza: String, color: String) : super(nom, pe, raza, color){
@@ -17,6 +20,12 @@ class cocodrilo : animal_domestico {
     override fun hacerRuido(): String {
         return "armmsasa"
     }
+
+    /**
+     * Peligroso
+     *
+     * @return
+     */
     public fun peligroso():Boolean{
         return true
     }

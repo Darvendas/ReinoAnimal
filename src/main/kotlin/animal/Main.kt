@@ -1,3 +1,8 @@
+/**
+ * Main
+ *
+ * @param args
+ */
 fun main(args: Array<String>) {
     val tobi = FactoriaClases.factoriaPerros()
     val blanquita = FactoriaClases.factoriaGatos()
